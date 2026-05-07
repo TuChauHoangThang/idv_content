@@ -1,0 +1,96 @@
+export type CharacterRole = 'survivor' | 'hunter';
+
+export interface Character {
+  id: string;
+  name: string;
+  role: CharacterRole;
+  image?: string; // Will be added later by the user
+}
+
+export const survivors: Character[] = [
+  { id: 's1', name: 'Bác Sĩ', role: 'survivor', image: '/images/survivors/Bác sĩ.png' },
+  { id: 's2', name: 'Luật Sư', role: 'survivor', image: '/images/survivors/Luật sư.png' },
+  { id: 's3', name: 'Kẻ trộm', role: 'survivor', image: '/images/survivors/Kẻ trộm.png' },
+  { id: 's4', name: 'Thợ vườn', role: 'survivor', image: '/images/survivors/Thợ vườn.png' },
+  { id: 's5', name: 'Ma thuật sư', role: 'survivor', image: '/images/survivors/Ma thuật sư.png' },
+  { id: 's6', name: 'Kẻ thăm dò', role: 'survivor', image: '/images/survivors/Thăm dò.png' },
+  { id: 's7', name: 'Lính thuê', role: 'survivor', image: '/images/survivors/Lính thuê.png' },
+  { id: 's8', name: 'Nữ điều sục', role: 'survivor', image: '/images/survivors/Nữ điều phối.png' },
+  { id: 's9', name: 'Cô gái lắc vòng', role: 'survivor', image: '/images/survivors/Nữ chủ tế.png' },
+  { id: 's10', name: 'Thợ máy', role: 'survivor', image: '/images/survivors/Thợ máy.png' },
+  { id: 's11', name: 'Tiền đạo', role: 'survivor', image: '/images/survivors/Tiền đạo.png' },
+  { id: 's12', name: 'Cô gái mù co', role: 'survivor', image: '/images/survivors/Cô gái mù.png' },
+  { id: 's13', name: 'Hương sư', role: 'survivor', image: '/images/survivors/Nước bông.png' },
+  { id: 's14', name: 'Cao bồi', role: 'survivor', image: '/images/survivors/Cao bồi.png' },
+  { id: 's15', name: 'Cô gái múa cột', role: 'survivor', image: '/images/survivors/Nữ vũ công.png' },
+  { id: 's16', name: 'Chym', role: 'survivor', image: '/images/survivors/Nhà tiên tri.png' },
+  { id: 's17', name: 'Người tẩm liệm', role: 'survivor', image: '/images/survivors/Tẩm liệm.png' },
+  { id: 's18', name: 'Kẻ đào vàng', role: 'survivor', image: '/images/survivors/Đào vàng.png' },
+  { id: 's20', name: 'Dã nhân', role: 'survivor', image: '/images/survivors/Dã nhân.png' },
+  { id: 's21', name: 'Diễn viên tạp kỹ', role: 'survivor', image: '/images/survivors/Tạp kỹ.png' },
+  { id: 's22', name: 'Thuyền phó', role: 'survivor', image: '/images/survivors/Thuyền phó.png' },
+  { id: 's23', name: 'Bartender', role: 'survivor', image: '/images/survivors/Bartender.png' },
+  { id: 's24', name: 'Người đưa thư', role: 'survivor', image: '/images/survivors/Người đưa thư.png' },
+  { id: 's25', name: 'Gác mộ', role: 'survivor', image: '/images/survivors/Gác mộ.png' },
+  { id: 's26', name: 'Lucachu', role: 'survivor', image: '/images/survivors/Luca.png' },
+  { id: 's27', name: 'Nhà côn trùng học', role: 'survivor', image: '/images/survivors/Nhà côn trùng học.png' },
+  { id: 's28', name: 'Họa sĩ', role: 'survivor', image: '/images/survivors/Họa sĩ.png' },
+  { id: 's29', name: 'Người đánh bóng', role: 'survivor', image: '/images/survivors/Người đánh bóng.png' },
+  { id: 's30', name: 'Người bán đồ chơi', role: 'survivor', image: '/images/survivors/Người bán đồ chơi.png' },
+  { id: 's31', name: 'Bệnh nhân', role: 'survivor', image: '/images/survivors/Bệnh nhân.png' },
+  { id: 's32', name: 'Nhà tâm lý học', role: 'survivor', image: '/images/survivors/Nhà tâm lý học.png' },
+  { id: 's33', name: 'Tiểu thuyết gia', role: 'survivor', image: '/images/survivors/Tiểu thuyết gia.png' },
+  { id: 's34', name: 'Bé gái', role: 'survivor', image: '/images/survivors/Bé gái.png' },
+  { id: 's35', name: 'Mặt cười thút thít', role: 'survivor', image: '/images/survivors/Mặt cười thút thít.png' },
+  { id: 's36', name: 'Giáo sư', role: 'survivor', image: '/images/survivors/Giáo sư.png' },
+  { id: 's37', name: 'Mẹ Châu Á', role: 'survivor', image: '/images/survivors/Người bán đồ cổ.png' },
+  { id: 's38', name: 'Nhà soạn nhạc', role: 'survivor', image: '/images/survivors/Nhà soạn nhạc.png' },
+  { id: 's39', name: 'Phóng viên', role: 'survivor', image: '/images/survivors/Phóng viên.png' },
+  { id: 's40', name: 'Phi hành tỏi', role: 'survivor', image: '/images/survivors/Phi hành gia.png' },
+  { id: 's41', name: 'Cô gái tút tút', role: 'survivor', image: '/images/survivors/Cổ vũ.png' },
+  { id: 's42', name: 'Người điều khiển rối', role: 'survivor', image: '/images/survivors/Người điều khiển rối.png' },
+  { id: 's43', name: 'Điều tra viên hỏa hoạn', role: 'survivor', image: '/images/survivors/Điều tra viên hỏa hoạn.png' },
+  { id: 's44', name: 'Cô Faro', role: 'survivor', image: '/images/survivors/Cô Faro.png' },
+  { id: 's45', name: 'Hiệp sĩ', role: 'survivor', image: '/images/survivors/Hiệp sĩ.png' },
+  { id: 's46', name: 'Gã may mắn', role: 'survivor', image: '/images/survivors/Gã may mắn.png' },
+  { id: 's47', name: 'Cung thủ', role: 'survivor', image: '/images/survivors/Cung thủ.png' },
+  { id: 's48', name: 'Mỹ nhân', role: 'survivor', image: '/images/survivors/Mỹ nhân.png' },
+  { id: 's49', name: 'Mây gió đi đi', role: 'survivor', image: '/images/survivors/Khí tượng học.png' },
+  { id: 's50', name: 'Bậc thầy đào tẩu', role: 'survivor', image: '/images/survivors/Kẻ đào thoát.png' },
+  { id: 's51', name: 'Đấu sĩ bò tót', role: 'survivor', image: '/images/survivors/Đấu sĩ bò tót.png' },
+  { id: 's52', name: 'Ảo thuật sư', role: 'survivor', image: '/images/survivors/Ảo thuật sư.png' }
+];
+
+export const hunters: Character[] = [
+  { id: 'h1', name: 'Xưởng Trưởng (Hell Ember)', role: 'hunter' },
+  { id: 'h2', name: 'Gã Hề (Smiley Face)', role: 'hunter' },
+  { id: 'h3', name: 'Jack Đồ Tể (The Ripper)', role: 'hunter' },
+  { id: 'h4', name: 'Kẻ Gác Rừng (Gamekeeper)', role: 'hunter' },
+  { id: 'h5', name: 'Thợ Dệt Hồn (Soul Weaver)', role: 'hunter' },
+  { id: 'h6', name: 'Mỹ Nhân Vị (Geisha)', role: 'hunter' },
+  { id: 'h7', name: 'Hắc Bạch Vô Thường (Wu Chang)', role: 'hunter' },
+  { id: 'h8', name: 'Nhiếp Ảnh Gia (Photographer)', role: 'hunter' },
+  { id: 'h9', name: 'Kiến Trúc Sư (Mad Eyes)', role: 'hunter' },
+  { id: 'h10', name: 'Hoàng Y Chi Chủ (Feaster)', role: 'hunter' },
+  { id: 'h11', name: 'Nữ Thần Mộng Mị (Dream Witch)', role: 'hunter' },
+  { id: 'h12', name: 'Ác Thằn Lằn (Evil Reptilian)', role: 'hunter' },
+  { id: 'h13', name: 'Huyết Hậu (Bloody Queen)', role: 'hunter' },
+  { id: 'h14', name: 'Bảo Vệ 26 (Guard 26)', role: 'hunter' },
+  { id: 'h15', name: 'Sứ Đồ ("Disciple")', role: 'hunter' },
+  { id: 'h16', name: 'Nghệ Sĩ Vĩ Cầm (Violinist)', role: 'hunter' },
+  { id: 'h17', name: 'Nhà Điêu Khắc (Sculptor)', role: 'hunter' },
+  { id: 'h18', name: 'Xác Sống ("Undead")', role: 'hunter' },
+  { id: 'h19', name: 'Phá Luân (Breaking Wheel)', role: 'hunter' },
+  { id: 'h20', name: 'Thủy Thần (Naiad)', role: 'hunter' },
+  { id: 'h21', name: 'Nghệ Nhân Sáp (Wax Artist)', role: 'hunter' },
+  { id: 'h22', name: 'Ác Mộng (Nightmare)', role: 'hunter' },
+  { id: 'h23', name: 'Thư Ký (Clerk)', role: 'hunter' },
+  { id: 'h24', name: 'Ẩn Sĩ (Hermit)', role: 'hunter' },
+  { id: 'h25', name: 'Kẻ Canh Đêm (Night Watch)', role: 'hunter' },
+  { id: 'h26', name: 'Nữ Ca Sĩ Opera (Opera Singer)', role: 'hunter' },
+  { id: 'h27', name: 'Vàng Giả ("Fool\'s Gold")', role: 'hunter' },
+  { id: 'h28', name: 'Hình Bóng (Shadow)', role: 'hunter' },
+  { id: 'h29', name: 'Người Dê (Goatman)', role: 'hunter' }
+];
+
+export const allCharacters = [...survivors, ...hunters];
