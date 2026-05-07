@@ -227,3 +227,20 @@ button {
   outline: none;
   border-color: var(--accent-color);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 1rem;
+  }
+  
+  .header-logo {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
