@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { survivors, type Character } from '../../data/characters';
 import { WheelCanvas, type WheelCanvasRef } from '../../components/Wheel/WheelCanvas';
 import type { WheelItem } from '../../components/Wheel/WheelCanvas';
