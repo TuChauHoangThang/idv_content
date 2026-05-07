@@ -201,6 +201,23 @@
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
 }
 
+/* Assigned Mission under Card */
+.assigned-mission {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(244, 162, 97, 0.15);
+  border: 1px solid rgba(244, 162, 97, 0.5);
+  color: #f4a261;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+  box-shadow: 0 0 10px rgba(244, 162, 97, 0.2);
+  text-align: center;
+}
+
 .refresh-btn {
   position: absolute;
   top: 10px;
@@ -244,12 +261,35 @@
   text-shadow: 0 0 10px rgba(244, 162, 97, 0.5);
 }
 
-.team-mission-display .mission-text {
-  font-size: 1.25rem;
-  font-weight: 700;
+/* 4-item mission grid inside team display */
+.mission-results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.mission-result-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: rgba(244, 162, 97, 0.1);
+  border: 1px solid rgba(244, 162, 97, 0.3);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+}
+
+.mission-result-item .mission-text {
+  font-size: 0.95rem;
+  font-weight: 600;
   color: #fff;
-  text-align: center;
-  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .mission-results-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ======== Wheels Section ======== */
@@ -285,6 +325,17 @@
 .spin-4-btn {
   margin-bottom: 1.5rem;
   padding: 0.5rem 1.5rem;
+}
+
+.mission-spin-btn {
+  background: linear-gradient(135deg, rgba(244, 162, 97, 0.3), rgba(230, 57, 70, 0.3)) !important;
+  border-color: rgba(244, 162, 97, 0.6) !important;
+  color: #f4a261 !important;
+}
+
+.mission-spin-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(244, 162, 97, 0.5), rgba(230, 57, 70, 0.5)) !important;
+  box-shadow: 0 0 15px rgba(244, 162, 97, 0.4);
 }
 
 .wheel-wrapper {
@@ -347,6 +398,20 @@
   padding: 0.1rem 0.4rem;
   border-radius: 4px;
   font-size: 0.8rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Orange badge for mission results */
+.mission-badge {
+  background: #f4a261 !important;
+  color: #1a0a00 !important;
+}
+
+/* Mission results list - orange accent */
+.mission-results-list li,
+.mission-result-li {
+  border-left-color: #f4a261 !important;
 }
 
 /* Winner Banner */
