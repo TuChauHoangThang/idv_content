@@ -24,7 +24,7 @@ const defaultMissions = [
   'Chaỵ hết map mới được giải máy',
   'Cứu đến chết',
   'Kite không đập pallet',
-  'Kite không nhảy cửa'
+  'Kite không nhảy cửa',
   'Giải mã đến chết',
   'Không được dùng item',
   'Emote khi gặp Hunter',
