@@ -20,16 +20,16 @@ const defaultBranches = [
 ];
 
 const defaultMissions = [
-  'Không được giải mã',
-  'Phải rescue đầu tiên',
+  'Không được giải máy',
+  'Chaỵ hết map mới được giải máy',
+  'Cứu đến chết',
+  'Kite không đập pallet',
+  'Kite không nhảy cửa'
+  'Giải mã đến chết',
   'Không được dùng item',
   'Emote khi gặp Hunter',
   'Chỉ được đi bộ, không chạy',
-  'Phải giải mã sát cổng',
-  'Chơi bằng 1 tay',
-  'Không được nhìn minimap',
-  'Phải kéo Hunter ít nhất 60s',
-  'Phải emote sau khi vượt bảng',
+  'Phải cứu 51, 101',
 ];
 
 const RandomizerPage: React.FC = () => {
