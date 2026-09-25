@@ -4,7 +4,7 @@ export interface Character {
   id: string;
   name: string;
   role: CharacterRole;
-  image?: string; // Will be added later by the user
+  image?: string;
 }
 
 export const survivors: Character[] = [
@@ -62,35 +62,43 @@ export const survivors: Character[] = [
 ];
 
 export const hunters: Character[] = [
-  { id: 'h1', name: 'Xưởng Trưởng (Hell Ember)', role: 'hunter' },
-  { id: 'h2', name: 'Gã Hề (Smiley Face)', role: 'hunter' },
-  { id: 'h3', name: 'Jack Đồ Tể (The Ripper)', role: 'hunter' },
-  { id: 'h4', name: 'Kẻ Gác Rừng (Gamekeeper)', role: 'hunter' },
-  { id: 'h5', name: 'Thợ Dệt Hồn (Soul Weaver)', role: 'hunter' },
-  { id: 'h6', name: 'Mỹ Nhân Vị (Geisha)', role: 'hunter' },
-  { id: 'h7', name: 'Hắc Bạch Vô Thường (Wu Chang)', role: 'hunter' },
-  { id: 'h8', name: 'Nhiếp Ảnh Gia (Photographer)', role: 'hunter' },
-  { id: 'h9', name: 'Kiến Trúc Sư (Mad Eyes)', role: 'hunter' },
-  { id: 'h10', name: 'Hoàng Y Chi Chủ (Feaster)', role: 'hunter' },
-  { id: 'h11', name: 'Nữ Thần Mộng Mị (Dream Witch)', role: 'hunter' },
-  { id: 'h12', name: 'Ác Thằn Lằn (Evil Reptilian)', role: 'hunter' },
-  { id: 'h13', name: 'Huyết Hậu (Bloody Queen)', role: 'hunter' },
-  { id: 'h14', name: 'Bảo Vệ 26 (Guard 26)', role: 'hunter' },
-  { id: 'h15', name: 'Sứ Đồ ("Disciple")', role: 'hunter' },
-  { id: 'h16', name: 'Nghệ Sĩ Vĩ Cầm (Violinist)', role: 'hunter' },
-  { id: 'h17', name: 'Nhà Điêu Khắc (Sculptor)', role: 'hunter' },
-  { id: 'h18', name: 'Xác Sống ("Undead")', role: 'hunter' },
-  { id: 'h19', name: 'Phá Luân (Breaking Wheel)', role: 'hunter' },
-  { id: 'h20', name: 'Thủy Thần (Naiad)', role: 'hunter' },
-  { id: 'h21', name: 'Nghệ Nhân Sáp (Wax Artist)', role: 'hunter' },
-  { id: 'h22', name: 'Ác Mộng (Nightmare)', role: 'hunter' },
-  { id: 'h23', name: 'Thư Ký (Clerk)', role: 'hunter' },
-  { id: 'h24', name: 'Ẩn Sĩ (Hermit)', role: 'hunter' },
-  { id: 'h25', name: 'Kẻ Canh Đêm (Night Watch)', role: 'hunter' },
-  { id: 'h26', name: 'Nữ Ca Sĩ Opera (Opera Singer)', role: 'hunter' },
-  { id: 'h27', name: 'Vàng Giả ("Fool\'s Gold")', role: 'hunter' },
-  { id: 'h28', name: 'Hình Bóng (Shadow)', role: 'hunter' },
-  { id: 'h29', name: 'Người Dê (Goatman)', role: 'hunter' }
+  { id: 'h1', name: 'Tro địa ngục', role: 'hunter', image: '/images/hunters/Tro địa ngục.png' },
+  { id: 'h2', name: 'Con hề', role: 'hunter', image: '/images/hunters/Con hề.png' },
+  { id: 'h3', name: 'Rách', role: 'hunter', image: '/images/hunters/Rách.png' },
+  { id: 'h4', name: 'Bane', role: 'hunter', image: '/images/hunters/Bane.png' },
+  { id: 'h5', name: 'Con nhện', role: 'hunter', image: '/images/hunters/Con nhện.png' },
+  { id: 'h6', name: 'Geisha', role: 'hunter', image: '/images/hunters/Geisha.png' },
+  { id: 'h7', name: 'Hắc Bạch Vô Thường (Wu Chang)', role: 'hunter', image: '/images/hunters/Wuchang.png' },
+  { id: 'h8', name: 'Nhiếp Ảnh Gia', role: 'hunter', image: '/images/hunters/Joseph.png' },
+  { id: 'h9', name: 'Mad Eyes)', role: 'hunter', image: '/images/hunters/Mắt điên.png' },
+  { id: 'h10', name: 'Hastur', role: 'hunter', image: '/images/hunters/Hastur.png' },
+  { id: 'h11', name: 'Dream Witch', role: 'hunter', image: '/images/hunters/Dream Witch.png' },
+  { id: 'h12', name: 'Nhóc Rìu', role: 'hunter', image: '/images/hunters/Nhóc rìu.png' },
+  { id: 'h13', name: 'Thằn Lằn', role: 'hunter', image: '/images/hunters/Thằn Lằn.png' },
+  { id: 'h14', name: 'Mary', role: 'hunter', image: '/images/hunters/Mary.png' },
+  { id: 'h15', name: 'BonBon', role: 'hunter', image: '/images/hunters/BonBonm.png' },
+  { id: 'h16', name: 'Con Ann', role: 'hunter', image: '/images/hunters/Ann.png' },
+  { id: 'h17', name: 'Nghệ Sĩ Vĩ Cầm ', role: 'hunter', image: '/images/hunters/Nhạc công.png' },
+  { id: 'h18', name: 'Con Trà', role: 'hunter', image: '/images/hunters/Trà.png' },
+  { id: 'h19', name: 'Undead', role: 'hunter', image: '/images/hunters/Undead.png' },
+  { id: 'h20', name: 'Bánh xe hỏng', role: 'hunter', image: '/images/hunters/Bánh xe hỏnge.png' },
+  { id: 'h21', name: 'Naiad', role: 'hunter', image: '/images/hunters/Nữ ngư dân.png' },
+  { id: 'h22', name: 'Nghệ Nhân Sáp', role: 'hunter', image: '/images/hunters/Nghệ sĩ tượng sáp.png' },
+  { id: 'h23', name: 'Con quạ', role: 'hunter', image: '/images/hunters/Con quạ.png' },
+  { id: 'h24', name: 'Thư Ký (Clerk)', role: 'hunter', image: '/images/hunters/Thư ký.png' },
+  { id: 'h25', name: 'Ẩn Sĩ (Hermit)', role: 'hunter', image: '/images/hunters/Hermit.png' },
+  { id: 'h26', name: 'Ithaqua', role: 'hunter', image: '/images/hunters/Ithaqua.png' },
+  { id: 'h27', name: 'Con Opera', role: 'hunter', image: '/images/hunters/Opera.png' },
+  { id: 'h28', name: 'Vàng Ngu', role: 'hunter', image: '/images/hunters/Vàng ngu.png' },
+  { id: 'h29', name: 'Bida', role: 'hunter', image: '/images/hunters/Bida.png' },
+  { id: 'h30', name: 'Trường Giang', role: 'hunter', image: '/images/hunters/Dê.png' },
+  { id: 'h31', name: 'Bà Già', role: 'hunter', image: '/images/hunters/Bà già.png' },
+  { id: 'h32', name: 'Bóng Chó', role: 'hunter', image: '/images/hunters/Bóng chó.png' },
+  { id: 'h33', name: 'Hullabaloon', role: 'hunter', image: '/images/hunters/Hullabaloon.png' },
+  { id: 'h34', name: 'Nha Sĩ', role: 'hunter', image: '/images/hunters/Nha sĩ.png' },
+  { id: 'h35', name: 'Ong Chúa', role: 'hunter', image: '/images/hunters/Ong chúa.png' },
+  { id: 'h36', name: 'Sấn Đòi', role: 'hunter', image: '/images/hunters/Sấn đòi.png' }
 ];
 
 export const allCharacters = [...survivors, ...hunters];
+

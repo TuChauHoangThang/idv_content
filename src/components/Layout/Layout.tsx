@@ -1,18 +1,19 @@
 import React from 'react';
 
 import { AmbientBackground } from './AmbientBackground';
-
+import { Navbar } from './Navbar';
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="app-container" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <AmbientBackground />
-      <header className="header" style={{ justifyContent: 'center' }}>
-        <div className="header-logo blinking-title">CONTENT VÔ HẠN CÙNG IDV</div>
+      <header className="header">
+        <Navbar />
       </header>
       <main className="main-content" style={{ flex: 1 }}>
         {children}
       </main>
+
       
       <footer className="footer" style={{
         marginTop: 'auto',
