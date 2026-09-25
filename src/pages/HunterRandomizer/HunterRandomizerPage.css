@@ -1,0 +1,209 @@
+.hunter-randomizer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Hunter Theme Colors Overrides / Accents */
+.hunter-theme {
+  --hunter-red: #e63946;
+  --hunter-dark-red: #8b0000;
+  --hunter-crimson: #a30000;
+  --hunter-gold: #ffc107;
+  --hunter-surface: rgba(45, 15, 20, 0.75);
+  --hunter-border: rgba(230, 57, 70, 0.35);
+}
+
+.mode-selector-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.mode-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mode-btn:hover {
+  background: rgba(230, 57, 70, 0.15);
+  color: #fff;
+}
+
+.mode-btn.active {
+  background: linear-gradient(135deg, #8b0000, #e63946);
+  color: #fff;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+}
+
+/* Mega Roll Hunter */
+.mega-roll-hunter {
+  background: linear-gradient(135deg, #a30000 0%, #e63946 50%, #d90429 100%) !important;
+  border: 2px solid #ff4d4d !important;
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.7), inset 0 0 15px rgba(255, 255, 255, 0.4) !important;
+  color: #fff !important;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  padding: 1.1rem 2.5rem !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 12px !important;
+}
+
+.mega-roll-hunter:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 0 35px rgba(230, 57, 70, 0.9), inset 0 0 20px rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Cards Grid */
+.hunter-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.hunter-card {
+  background: rgba(35, 12, 18, 0.8);
+  border: 1px solid rgba(230, 57, 70, 0.4);
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(230, 57, 70, 0.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.hunter-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8b0000, #e63946, #ffc107);
+}
+
+.hunter-card:hover {
+  border-color: #e63946;
+  box-shadow: 0 12px 35px rgba(230, 57, 70, 0.4), 0 0 15px rgba(230, 57, 70, 0.3);
+}
+
+.hunter-image-placeholder {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid rgba(230, 57, 70, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.3);
+  overflow: hidden;
+}
+
+.hunter-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hunter-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffc107;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+/* Assigned Attribute Badges */
+.assigned-trait {
+  background: rgba(230, 57, 70, 0.2);
+  border: 1px solid rgba(230, 57, 70, 0.6);
+  color: #ff9999;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.assigned-hunter-branch {
+  background: rgba(255, 193, 7, 0.15);
+  border: 1px solid rgba(255, 193, 7, 0.5);
+  color: #ffe082;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.assigned-hunter-mission {
+  background: rgba(138, 43, 226, 0.2);
+  border: 1px solid rgba(138, 43, 226, 0.6);
+  color: #e0b0ff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+/* Three Wheels Layout for Hunter */
+.hunter-wheels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.hunter-wheel-card {
+  background: rgba(30, 10, 15, 0.7);
+  border: 1px solid rgba(230, 57, 70, 0.3);
+}
+
+.hunter-badge {
+  background: linear-gradient(135deg, #e63946, #8b0000) !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .hunter-wheels-grid {
+    grid-template-columns: 1fr;
+  }
+}
