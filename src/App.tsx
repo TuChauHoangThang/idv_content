@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-route
 import { Layout } from './components/Layout/Layout';
 import RandomizerPage from './pages/Randomizer/RandomizerPage';
 import HunterRandomizerPage from './pages/HunterRandomizer/HunterRandomizerPage';
-import WheelPage from './pages/Wheel/WheelPage';
 import { AnimatePresence, motion } from 'framer-motion';
 
 function AnimatedRoutes() {
@@ -42,19 +41,7 @@ function AnimatedRoutes() {
             </motion.div>
           }
         />
-        <Route
-          path="/wheel"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-            >
-              <WheelPage />
-            </motion.div>
-          }
-        />
+        <Route path="/wheel" element={<Navigate to="/survivor" replace />} />
         <Route path="*" element={<Navigate to="/survivor" replace />} />
       </Routes>
     </AnimatePresence>

@@ -30,6 +30,10 @@ const defaultMissions = [
   'Emote khi gặp Hunter',
   'Chỉ được đi bộ, không chạy',
   'Phải cứu 51, 101',
+  'Chỉ được rẽ phải',
+  'Tranh máy tranh cứu',
+  'Tái hợp 4 lần mới được decode',
+  'Lục 3 hòm mới được decode',
 ];
 
 const RandomizerPage: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Users, Skull, Disc } from 'lucide-react';
+import { Users, Skull } from 'lucide-react';
 import './Navbar.css';
 
 export const Navbar: React.FC = () => {
@@ -25,14 +25,6 @@ export const Navbar: React.FC = () => {
         >
           <Skull size={20} />
           <span>HUNTER MODE</span>
-        </NavLink>
-
-        <NavLink
-          to="/wheel"
-          className={({ isActive }) => `nav-item wheel-nav ${isActive ? 'active' : ''}`}
-        >
-          <Disc size={20} />
-          <span>VÒNG QUAY CUSTOM</span>
         </NavLink>
       </div>
     </nav>

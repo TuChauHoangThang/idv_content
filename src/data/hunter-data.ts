@@ -11,18 +11,15 @@ export const defaultHunterTraits: string[] = [
 ];
 
 export const defaultHunterBranches: string[] = [
-  'Nhánh 12 (Trông nhà / Insolence ⬆️)',
-  'Nhánh 6 (Bắt giữ thần tốc / Detention ⬇️)',
-  'Nhánh 3 (Vọng âm / Confined Space ➡️)',
-  'Nhánh 9 (Thẻ bài dự phòng / Trump Card ⬅️)',
-  'Nhánh 12 - 6 (Insolence + Detention ⬆️⬇️)',
-  'Nhánh 12 - 3 (Insolence + Confined Space ⬆️➡️)',
-  'Nhánh 3 - 6 (Confined Space + Detention ➡️⬇️)',
-  'Nhánh 9 - 6 (Trump Card + Detention ⬅️⬇️)',
-  'Nhánh 9 - 12 (Trump Card + Insolence ⬅️⬆️)',
-  'Nhánh 3 - 9 (Confined Space + Trump Card ➡️⬅️)',
-  'Kỹ năng tự chọn (Free Build 🛠️)',
-  'Không nhánh / Điểm tự do 🚫'
+  'Nhánh 3-6',
+  'Nhánh 9-12',
+  'Nhánh 3-12',
+  'Nhánh 6-12',
+  'Nhánh 6-9',
+  'Chỉ nhánh 9',
+  'Chỉ nhánh 12',
+  'Nhánh bông tuyết ❄️',
+  'Không có nhánh, đừng có hỏi 🚫',
 ];
 
 export const defaultHunterMissions: string[] = [

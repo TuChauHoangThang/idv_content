@@ -70,7 +70,7 @@ export const hunters: Character[] = [
   { id: 'h6', name: 'Geisha', role: 'hunter', image: '/images/hunters/Geisha.png' },
   { id: 'h7', name: 'Hắc Bạch Vô Thường (Wu Chang)', role: 'hunter', image: '/images/hunters/Wuchang.png' },
   { id: 'h8', name: 'Nhiếp Ảnh Gia', role: 'hunter', image: '/images/hunters/Joseph.png' },
-  { id: 'h9', name: 'Mad Eyes)', role: 'hunter', image: '/images/hunters/Mắt điên.png' },
+  { id: 'h9', name: 'Mad Eyes', role: 'hunter', image: '/images/hunters/Mắt điên.png' },
   { id: 'h10', name: 'Hastur', role: 'hunter', image: '/images/hunters/Hastur.png' },
   { id: 'h11', name: 'Dream Witch', role: 'hunter', image: '/images/hunters/Dream Witch.png' },
   { id: 'h12', name: 'Nhóc Rìu', role: 'hunter', image: '/images/hunters/Nhóc rìu.png' },
